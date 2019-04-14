@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tu peso en otro planeta</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<div id="cover"></div>
+<main id="menu_block">
+	<div class="container">
+		<h1>¿Sabes cuanto pesas en otro planeta?</h1>
+		<p>Ingresa tus datos en el siguiente formulario para saber cuanto pesarías en los diferentes planetas de nuestro sistema solar</p>
+		<form>
+			<input type="text" name="nombre_input" placeholder="Nombre" id="name_input">
+			<input type="number" name="peso_input" placeholder="Peso en kg" id="weight_input">
+			<select id="select_planets_form">
+				<option disabled selected>Seleccionar planeta</option>
+				<option value="1">Mercurio</option>
+				<option value="2">Venus</option>
+				<option value="3">Tierra</option>
+				<option value="4">Marte</option>
+				<option value="5">Júpiter</option>
+				<option value="6">Saturno</option>
+				<option value="7">Urano</option>
+				<option value="8">Neptuno</option>
+			</select>
+			<input type="button" value="Calcular peso" id="btn_input">
+		</form>
+	</div>
+</main>
+<section id="result_block" class="display-none">
+	<div class="container-resultado">
+		<b id="weight_result"></b>
+		<h2 id="leyend_result"></h2>
+	</div>
+	<div class="card-info">
+		<p id="info_planet"></p>
+	</div>
+	<a id="button_reset">Volver a calcular</a>
+</section>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>
